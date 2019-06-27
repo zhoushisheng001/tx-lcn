@@ -18,6 +18,7 @@ package com.codingapi.txlcn.tm;
 import com.codingapi.txlcn.tm.support.TxLcnManagerBanner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Description:
@@ -27,11 +28,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author lorne
  */
 @SpringBootApplication
+//@EnableDiscoveryClient
 public class TMApplication {
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(TMApplication.class);
-        springApplication.setBanner(new TxLcnManagerBanner());
+//        springApplication.setBanner(new TxLcnManagerBanner());
         springApplication.run(args);
     }
 }
